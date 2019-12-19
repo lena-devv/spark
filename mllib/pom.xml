@@ -26,8 +26,10 @@
   </parent>
 
   <artifactId>spark-mllib_2.11</artifactId>
+  <version>2.4.0-local</version>
   <properties>
     <sbt.project.name>mllib</sbt.project.name>
+    <old.project.version>2.4.0</old.project.version>
   </properties>
   <packaging>jar</packaging>
   <name>Spark Project ML Library</name>
@@ -41,53 +43,53 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-streaming_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-sql_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-catalyst_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-sql_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-graphx_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-mllib-local_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-mllib-local_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -112,7 +114,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-streaming_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${old.project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -124,6 +126,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${old.project.version}</version>
     </dependency>
 
     <!--
@@ -135,6 +138,7 @@
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
+      <version>${old.project.version}</version>
     </dependency>
 
   </dependencies>

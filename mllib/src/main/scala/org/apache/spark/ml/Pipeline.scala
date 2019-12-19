@@ -21,9 +21,11 @@ import java.{util => ju}
 
 import scala.collection.JavaConverters._
 import scala.collection.mutable.ListBuffer
+
 import org.apache.hadoop.fs.Path
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
+
 import org.apache.spark.SparkContext
 import org.apache.spark.annotation.{DeveloperApi, Since}
 import org.apache.spark.internal.Logging
@@ -83,8 +85,8 @@ abstract class PipelineStage extends Params with Logging with
   override def copy(extra: ParamMap): PipelineStage
 
   override protected def doPostEvent(
-	listener: MLListener,
-	event: MLListenEvent): Unit = {
+  listener: MLListener,
+  event: MLListenEvent): Unit = {
     listener.onEvent(event)
   }
 }
